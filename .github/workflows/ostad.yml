@@ -12,8 +12,8 @@ jobs:
   read_the_file:
     runs-on: ubuntu-latest
     steps:
-      - name: Getclone
+      - name: Get clone
         uses: actions/checkout@v2
       - name: Read the Text
-        rungit: cat Msg.txt
+        run: cat Msg.txt
 
