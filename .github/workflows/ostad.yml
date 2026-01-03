@@ -1,0 +1,19 @@
+name: ostad CI/CD pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+jobs:
+  read_the_file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Getclone
+        uses: actions/checkout@v2
+      - name: Read the Text
+        rungit: cat Msg.txt
+
